@@ -1,4 +1,4 @@
-package structure.hash.queue;
+package structure.queue;
 
 import java.util.NoSuchElementException;
 
@@ -48,8 +48,23 @@ class Queue<T> {
     public boolean isEmpty() {
         return first == null;
     }
-
 }
 
 public class Test {
+    public static void main(String[] args) {
+        Queue<Integer> q = new Queue<>();
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+
+        System.out.println(q.remove());
+        System.out.println(q.remove());
+        System.out.println(q.peek());
+        System.out.println(q.remove());
+        System.out.println(q.isEmpty());
+        System.out.println(q.remove());
+        System.out.println(q.isEmpty());
+
+    }
 }
