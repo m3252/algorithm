@@ -18,23 +18,28 @@ public class Lesson42586 {
         int[] temp = new int[progresses.length];
         int day = 0;
         int deploy = 1;
+        int now = 0;
 
-        for(int i=0; i<progresses.length; i++){
+        for (int i = 0; i < progresses.length; i++) {
             day = (99 - progresses[i]) / speeds[i] + 1;
             temp[i] = day;
         }
 
         System.out.println(Arrays.toString(Arrays.stream(temp).toArray()));
-        for(int i=1; i<temp.length; i++){
-            if(temp[i-1] > temp[i]){
-                deploy = deploy + 1;
-            }else{
-                deploy = 1;
-            }
-            arr.add(deploy);
-        }
+        // [5, 10, 1, 1, 20, 1]
 
-        return arr.stream().mapToInt(i->i).toArray();
+        now = temp[0];
+        for (int i = 1; i < temp.length; i++) {
+            if(now >= temp[i]){
+                deploy += 1;
+            }else{
+                arr.add(deploy);
+                deploy = 1;
+                now = temp[i];
+            }
+        }
+        arr.add(deploy);
+        return arr.stream().mapToInt(i -> i).toArray();
     }
 
 
