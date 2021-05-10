@@ -25,6 +25,7 @@ public class Lesson42586 {
             temp[i] = day;
         }
 
+
         System.out.println(Arrays.toString(Arrays.stream(temp).toArray()));
         // [5, 10, 1, 1, 20, 1]
 
