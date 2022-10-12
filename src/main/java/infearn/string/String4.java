@@ -33,6 +33,28 @@ public class String4 {
         }
     }
 
+    public static void solution2(String[] strings){
+        for (int i = 0; i < strings.length; i++) {
+            System.out.println(new StringBuilder(strings[i]).reverse());
+        }
+    }
+
+    public static void solution3(String[] strings){
+        for (int i = 0; i < strings.length; i++) {
+            char[] chars = strings[i].toCharArray();
+            int lt = 0;
+            int rt = strings[i].length()-1;
+            while (lt < rt) {
+                char tmp = chars[lt];
+                chars[lt] = chars[rt];
+                chars[rt] = tmp;
+                lt ++;
+                rt --;
+            }
+            System.out.println(String.valueOf(chars));
+        }
+    }
+
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int size = in.nextInt();
@@ -40,6 +62,6 @@ public class String4 {
         for (int i = 0; i < size; i++) {
             strings[i] = in.next();
         }
-        solution(strings);
+        solution3(strings);
     }
 }
