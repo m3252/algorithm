@@ -39,9 +39,20 @@ public class String6 {
         System.out.println(answer);
     }
 
+    private static void solution2(String str) {
+
+        String answer = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (str.indexOf(str.charAt(i)) == i) {
+                answer += str.charAt(i);
+            }
+        }
+        System.out.println(answer);
+    }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
-        solution(str);
+        solution2(str);
     }
 }
