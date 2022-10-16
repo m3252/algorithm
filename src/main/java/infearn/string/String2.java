@@ -1,6 +1,5 @@
-package infearn.String;
+package infearn.string;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -18,7 +17,7 @@ import java.util.Scanner;
  */
 
 
-public class 문자찾기 {
+public class String2 {
 
     public static int solution(String input1, String input2){
         int count = 0;

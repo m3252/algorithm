@@ -1,4 +1,4 @@
-package infearn.String;
+package infearn.string;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ import java.util.Scanner;
  */
 
 
-public class 대소문자변환 {
+public class String1 {
 
     public static String solution(String input1){
         StringBuilder answer = new StringBuilder();

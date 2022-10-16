@@ -1,4 +1,4 @@
-package infearn.String;
+package infearn.string;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ import java.util.Scanner;
  */
 
 
-public class 문장속단어 {
+public class String3 {
 
     public static String solution(String input1){
         String[] array = input1.split(" ");
