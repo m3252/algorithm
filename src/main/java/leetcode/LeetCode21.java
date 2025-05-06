@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode;
 
 // 두 정렬된 연결 리스트를 병합하여 하나의 정렬된 연결 리스트로 반환하는 문제입니다.
 public class LeetCode21 {

@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode;
 
 /*
 Binary Search Tree (BST)가 주어질 때,
